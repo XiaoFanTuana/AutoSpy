@@ -382,6 +382,17 @@ js_config:
 - Container:
   - []
   Disable: 0
+  Env: VENDER_ID
+  KeyWord:
+  - - VENDER_ID
+  Name: 入会开卡领礼包
+  OverdueTime: 1800
+  Script: jd_OpenCard_Force.js
+  TimeOut: 240
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
   Env: jd_wdzfd_activityId
   KeyWord:
   - - jd_wdzfd_activityId
