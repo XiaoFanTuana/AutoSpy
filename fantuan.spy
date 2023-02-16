@@ -102,6 +102,18 @@ js_config:
 - Container:
   - []
   Disable: 0
+  Env: M_WX_SHOP_SIGN_URL
+  KeyWord:
+  - - M_WX_SHOP_SIGN_URL
+  - - jd_sevenDay_activityUrl
+  Name: M签到有礼
+  OverdueTime: 1800
+  Script: m_jd_wx_shopSign.js
+  TimeOut: 180
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
   Env: M_WX_LEVEL_BIRTH_URL
   KeyWord:
   - - jd_task_djlb_custom
@@ -273,40 +285,10 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Disable: 0
-  Env: jd_task_qdyl_custom
-  KeyWord:
-  - - jd_task_qdyl_custom
-  - - jd_sevenDay_activityUrl
-  - - jCJHY_SIGN
-  - - LZKJ_SIGN
-  - - jd_cjhy_signActivity_ids
-  - - jd_lzkj_signActivity2_ids
-  Name: 签到有礼
-  OverdueTime: 1800
-  Script: jd_task_qdyl.js
-  TimeOut: 180
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
-  Env: jd_task_qtqd_custom
-  KeyWord:
-  - - jd_task_qtqd_custom
-  - - CJHY_SEVENDAY
-  - - LZKJ_SEVENDAY
-  - - jd_cjhy_sevenDay_ids
-  - - jd_lzkj_sevenDay_ids
-  Name: 七天签到
-  OverdueTime: 1800
-  Script: jd_task_qtqd.js
-  TimeOut: 180
-  Wait: 2
-- Container:
-  - []
   Env: jd_task_dpqd_custom
   KeyWord:
   - - jd_task_dpqd_custom
+  - - jd_task_shopSign11
   Name: 店铺签到
   OverdueTime: 60
   Script: jd_task_dpqd.js
@@ -385,6 +367,7 @@ js_config:
   Env: VENDER_ID
   KeyWord:
   - - VENDER_ID
+  - - OPEN_CARD_SHOP_ID
   Name: 入会开卡领礼包
   OverdueTime: 1800
   Script: jd_OpenCard_Force.js
@@ -472,6 +455,28 @@ js_config:
 - Container:
   - []
   Disable: 0
+  Env: jd_joinCommonId
+  KeyWord:
+  - - jd_joinCommonId
+  Name: joinCommon开卡
+  OverdueTime: 1800
+  Script: jd_joinCommon_opencard.py
+  TimeOut: 3600
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: jd_shopLeagueId
+  KeyWord:
+  - - jd_shopLeagueId
+  Name: shopLeague开卡
+  OverdueTime: 1800
+  Script: jd_shopLeague_opencard.py
+  TimeOut: 3600
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
   Env: jd_categoryUnion_activityId
   KeyWord:
   - - jd_categoryUnion_activityId
@@ -492,15 +497,4 @@ js_config:
   OverdueTime: 1800
   Script: jd_categoryUnion_draw.js
   TimeOut: 0
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
-  Env: DPLHTY
-  KeyWord:
-  - - DPLHTY
-  Name: 大牌联合
-  OverdueTime: 1800
-  Script: jd_opencardDPLHTY.js
-  TimeOut: 1800
   Wait: 2
