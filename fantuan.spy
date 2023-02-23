@@ -10,7 +10,7 @@ js_config:
   Name: M幸运抽奖
   OverdueTime: 1800
   Script: m_jd_wx_luckDraw.js
-  TimeOut: 180
+  TimeOut: 240
   Wait: 2
 - Container:
   - []
@@ -24,7 +24,7 @@ js_config:
   Name: M加购有礼
   OverdueTime: 1800
   Script: m_jd_wx_addCart.js
-  TimeOut: 180
+  TimeOut: 300
   Wait: 2
 - Container:
   - []
@@ -37,7 +37,7 @@ js_config:
   Name: M关注抽奖
   OverdueTime: 1800
   Script: m_jd_wx_followDraw.js
-  TimeOut: 180
+  TimeOut: 300
   Wait: 2
 - Container:
   - []
@@ -49,7 +49,7 @@ js_config:
   Name: M集卡抽奖
   OverdueTime: 1800
   Script: m_jd_wx_collectCard.js
-  TimeOut: 180
+  TimeOut: 240
   Wait: 2
 - Container:
   - []
@@ -85,7 +85,7 @@ js_config:
   Name: M老虎机抽奖
   OverdueTime: 1800
   Script: m_jd_wx_centerDraw.js
-  TimeOut: 240
+  TimeOut: 300
   Wait: 2
 - Container:
   - []
@@ -97,7 +97,7 @@ js_config:
   Name: M盖楼领奖
   OverdueTime: 1800
   Script: m_jd_wx_buildDraw.js
-  TimeOut: 240
+  TimeOut: 300
   Wait: 2
 - Container:
   - []
@@ -109,7 +109,7 @@ js_config:
   Name: M签到有礼
   OverdueTime: 1800
   Script: m_jd_wx_shopSign.js
-  TimeOut: 180
+  TimeOut: 240
   Wait: 2
 - Container:
   - []
@@ -121,7 +121,7 @@ js_config:
   Name: M等级/生日礼包
   OverdueTime: 1800
   Script: m_jd_wx_levelBirth.js
-  TimeOut: 180
+  TimeOut: 240
   Wait: 2
 - Container:
   - []
@@ -134,7 +134,7 @@ js_config:
   Name: M读秒手速
   OverdueTime: 1800
   Script: m_jd_wx_secondDraw.js
-  TimeOut: 180
+  TimeOut: 240
   Wait: 2
 - Container:
   - []
@@ -156,7 +156,7 @@ js_config:
   Name: M无线游戏
   OverdueTime: 1800
   Script: m_jd_wx_game.js
-  TimeOut: 240
+  TimeOut: 300
   Wait: 2
 - Container:
   - []
@@ -167,7 +167,7 @@ js_config:
   Name: M打豆豆
   OverdueTime: 1800
   Script: m_jd_wx_dadoudou.js
-  TimeOut: 240
+  TimeOut: 300
   Wait: 2
 - Container:
   - []
@@ -289,6 +289,7 @@ js_config:
   KeyWord:
   - - jd_task_dpqd_custom
   - - jd_task_shopSign11
+  - - DPQDTK
   Name: 店铺签到
   OverdueTime: 60
   Script: jd_task_dpqd.js
