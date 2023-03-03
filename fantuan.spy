@@ -24,7 +24,7 @@ js_config:
   Name: M加购有礼
   OverdueTime: 1800
   Script: m_jd_wx_addCart.js
-  TimeOut: 300
+  TimeOut: 480
   Wait: 2
 - Container:
   - []
@@ -42,13 +42,13 @@ js_config:
 - Container:
   - []
   Disable: 0
-  Env: M_WX_COLLECT_CARD_URL
+  Env: M_WX_SHOP_SIGN_URL
   KeyWord:
-  - - jd_task_jkyl_custom
-  - - M_WX_COLLECT_CARD_URL
-  Name: M集卡抽奖
+  - - M_WX_SHOP_SIGN_URL
+  - - jd_sevenDay_activityUrl
+  Name: M签到有礼
   OverdueTime: 1800
-  Script: m_jd_wx_collectCard.js
+  Script: m_jd_wx_shopSign.js
   TimeOut: 240
   Wait: 2
 - Container:
@@ -78,37 +78,15 @@ js_config:
 - Container:
   - []
   Disable: 0
-  Env: M_WX_CENTER_DRAW_URL
+  Env: M_WX_SHOP_GIFT_URL
   KeyWord:
-  - - jd_task_lhjcj_custom
-  - - M_WX_CENTER_DRAW_URL
-  Name: M老虎机抽奖
+  - - jd_task_dplb_custom
+  - - jd_task_gzyl_custom
+  - - M_WX_SHOP_GIFT_URL
+  - - jd_wxShopGift_activityUrl
+  Name: M关注有礼无线
   OverdueTime: 1800
-  Script: m_jd_wx_centerDraw.js
-  TimeOut: 300
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
-  Env: M_WX_BUILD_DRAW_URL
-  KeyWord:
-  - - jd_task_glyl_custom
-  - - M_WX_BUILD_DRAW_URL
-  Name: M盖楼领奖
-  OverdueTime: 1800
-  Script: m_jd_wx_buildDraw.js
-  TimeOut: 300
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
-  Env: M_WX_SHOP_SIGN_URL
-  KeyWord:
-  - - M_WX_SHOP_SIGN_URL
-  - - jd_sevenDay_activityUrl
-  Name: M签到有礼
-  OverdueTime: 1800
-  Script: m_jd_wx_shopSign.js
+  Script: m_jd_wx_shopGift.js
   TimeOut: 240
   Wait: 2
 - Container:
@@ -126,15 +104,14 @@ js_config:
 - Container:
   - []
   Disable: 0
-  Env: M_WX_SECOND_DRAW_URL
+  Env: M_WX_CENTER_DRAW_URL
   KeyWord:
-  - - M_WX_SECOND_DRAW_URL
-  - - jd_task_mdsx_custom
-  - - jd_task_dmcj_custom
-  Name: M读秒手速
+  - - jd_task_lhjcj_custom
+  - - M_WX_CENTER_DRAW_URL
+  Name: M老虎机抽奖
   OverdueTime: 1800
-  Script: m_jd_wx_secondDraw.js
-  TimeOut: 240
+  Script: m_jd_wx_centerDraw.js
+  TimeOut: 300
   Wait: 2
 - Container:
   - []
@@ -145,6 +122,31 @@ js_config:
   Name: M完善有礼
   OverdueTime: 1800
   Script: m_jd_wx_completeDraw.js
+  TimeOut: 240
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_BUILD_DRAW_URL
+  KeyWord:
+  - - jd_task_glyl_custom
+  - - M_WX_BUILD_DRAW_URL
+  Name: M盖楼领奖
+  OverdueTime: 1800
+  Script: m_jd_wx_buildDraw.js
+  TimeOut: 300
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_SECOND_DRAW_URL
+  KeyWord:
+  - - M_WX_SECOND_DRAW_URL
+  - - jd_task_mdsx_custom
+  - - jd_task_dmcj_custom
+  Name: M读秒手速
+  OverdueTime: 1800
+  Script: m_jd_wx_secondDraw.js
   TimeOut: 240
   Wait: 2
 - Container:
@@ -168,6 +170,18 @@ js_config:
   OverdueTime: 1800
   Script: m_jd_wx_dadoudou.js
   TimeOut: 300
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_COLLECT_CARD_URL
+  KeyWord:
+  - - jd_task_jkyl_custom
+  - - M_WX_COLLECT_CARD_URL
+  Name: M集卡抽奖
+  OverdueTime: 1800
+  Script: m_jd_wx_collectCard.js
+  TimeOut: 240
   Wait: 2
 - Container:
   - []
@@ -254,22 +268,6 @@ js_config:
   OverdueTime: 1800
   Script: jd_task_fxyl.js
   TimeOut: 240
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
-  Env: jd_task_dplb_custom
-  KeyWord:
-  - - jd_task_dplb_custom
-  - - jd_task_gzyl_custom
-  - - M_WX_SHOP_GIFT_URL
-  - - jd_wxShopGift_activityUrl
-  - - jd_lzkj_wxShopGift_ids
-  - - jd_wxShopGiftId
-  Name: 店铺礼包
-  OverdueTime: 1800
-  Script: jd_task_dplb.js
-  TimeOut: 60
   Wait: 2
 - Container:
   - []
