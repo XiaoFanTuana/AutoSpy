@@ -39,18 +39,6 @@ js_config:
 - Container:
   - []
   Disable: 0
-  Env: M_WX_SHOP_SIGN_URL
-  KeyWord:
-  - - M_WX_SHOP_SIGN_URL
-  - - jd_sevenDay_activityUrl
-  Name: M签到有礼
-  OverdueTime: 1800
-  Script: m_jd_wx_shopSign.js
-  TimeOut: 360
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
   Env: M_FOLLOW_SHOP_ARGV
   KeyWord:
   - - M_FOLLOW_SHOP_ARGV
@@ -119,17 +107,6 @@ js_config:
   Wait: 2
 - Container:
   - []
-  Env: M_WX_POINT_DRAW_URL
-  KeyWord:
-  - - jd_task_jfhd_custom
-  - - M_WX_POINT_DRAW_URL
-  Name: M积分兑换
-  OverdueTime: 1800
-  Script: m_jd_wx_pointDraw.js
-  TimeOut: 420
-  Wait: 2
-- Container:
-  - []
   Disable: 0
   Env: M_WX_COMPLETE_DRAW_URL
   KeyWord:
@@ -153,27 +130,26 @@ js_config:
 - Container:
   - []
   Disable: 0
-  Env: M_WX_CARTKOI_URL
-  KeyWord:
-  - - M_WX_CARTKOI_URL
-  Name: M购物车锦鲤
-  OverdueTime: 1800
-  Script: m_jd_wx_cartKoi.js
-  TimeOut: 420
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
   Env: M_WX_SECOND_DRAW_URL
   KeyWord:
   - - M_WX_SECOND_DRAW_URL
-  - - jd_task_mdsx_custom
-  - - jd_task_dmcj_custom
   Name: M读秒手速
   OverdueTime: 1800
   Script: m_jd_wx_secondDraw.js
   TimeOut: 360
   Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_KNOWLEDGE_URL
+  KeyWord:
+  - - M_WX_KNOWLEDGE_URL
+  - - jd_wxKnowledgeActivity_activityUrl
+  Name: M知识超人
+  OverdueTime: 1800
+  Script: m_jd_wx_knowledge.js
+  TimeOut: 420
+  Wait: 0
 - Container:
   - []
   Disable: 0
@@ -216,31 +192,6 @@ js_config:
   Name: M粉丝红包
   OverdueTime: 1800
   Script: m_jd_fans_redPackt.js
-  TimeOut: 900
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
-  Env: M_INTERACT_INVITE_URL
-  KeyWord:
-  - - jd_lzkj_loreal_invite_url
-  - - jd_lzkjInteractUrl
-  - - M_INTERACT_INVITE_URL
-  Name: M邀请有礼INTERACT
-  OverdueTime: 1800
-  Script: m_jd_interact_invite.js
-  TimeOut: 900
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
-  Env: M_JINGGENG_INVITE_URL
-  KeyWord:
-  - - M_JINGGENG_INVITE_URL
-  - - jd_showInviteJoin_activityUrl
-  Name: M邀请有礼JINGGENG
-  OverdueTime: 1800
-  Script: m_jd_wx_showInviteJoin.js
   TimeOut: 900
   Wait: 2
 - Container:
@@ -354,28 +305,6 @@ js_config:
 - Container:
   - []
   Disable: 0
-  Env: jd_wxInviteFollowActId
-  KeyWord:
-  - - jd_wxInviteFollowActId
-  Name: wxInvite邀请关注
-  OverdueTime: 1800
-  Script: jd_wxInviteFollowAct.py
-  TimeOut: 900
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
-  Env: jd_wxInviteOpenActId
-  KeyWord:
-  - - jd_wxInviteOpenActId
-  Name: wxInvite会员邀新
-  OverdueTime: 1800
-  Script: jd_wxInviteOpenAct.py
-  TimeOut: 900
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
   Env: jd_wdzfd_activityId
   KeyWord:
   - - jd_wdzfd_activityId
@@ -406,17 +335,6 @@ js_config:
   OverdueTime: 1800
   Script: jd_wxUnPackingActivity.js
   TimeOut: 0
-  Wait: 2
-- Container:
-  - []
-  Disable: 0
-  Env: jd_wxKnowledgeActivity_activityUrl
-  KeyWord:
-  - - jd_wxKnowledgeActivity_activityUrl
-  Name: 知识超人
-  OverdueTime: 1800
-  Script: jd_wxKnowledgeActivity.js
-  TimeOut: 360
   Wait: 2
 - Container:
   - []
